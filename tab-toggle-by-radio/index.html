@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用radio实现标签页的切换</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>利用radio按钮实现的无JS标签切换效果：</h1>
+
+  <div class="tabs-container">
+    <input type="radio" name="tab" id="tab1" checked>
+    <input type="radio" name="tab" id="tab2">
+    <input type="radio" name="tab" id="tab3">
+
+    <div class="tab-labels">
+      <label for="tab1" class="tab-label">基础功能</label>
+      <label for="tab2" class="tab-label">实现原理</label>
+      <label for="tab3" class="tab-label">应用场景</label>
+    </div>
+
+    <div class="tab-contents">
+      <article class="tab-content content1">
+        <p>支持点解切换不同内容区域，带有平滑过渡效果，无需JS</p>
+      </article>
+      <article class="tab-content content2">
+        <p>利用radio按钮的原生互斥特性和CSS的兄弟选择器，通过:checked伪类控制内容显示</p>
+      </article>
+      <article class="tab-content content3">
+        <p>适用于内容分类展示、步骤引导、选项卡式界面等场景，兼容性好且性能优异
+        </p>
+      </article>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: hsl(230,100%,60%); /* 初始灰色 */
+  color: white;
+}
+.btn:hover{
+  background-color: hsl(240,100%,60%);
+}
+.btn.active {
+  background-color: hsl(120,90%,40%); /* 切换后绿色 */
+}

@@ -1,0 +1,55 @@
+/* 重置样式 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+  color:#333;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* 隐藏input */
+input {
+  display: none;
+}
+
+.tab-labels {
+  margin: 10px 0px 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 20px;
+}
+
+.tab-label {
+  padding: 5px 15px;
+}
+
+/* tab-label选中的样式 */
+input#tab1:checked~.tab-labels label[for="tab1"], 
+input#tab2:checked~.tab-labels label[for="tab2"], 
+input#tab3:checked~.tab-labels label[for="tab3"] {
+  border-bottom: 2px solid #2c3e50;
+  color:#2c3e50;
+  font-weight: 500;
+}
+
+/* tab内容卡显示隐藏控制 */
+.tab-content{
+  display: none;
+}
+
+input#tab1:checked~.tab-contents .content1,
+input#tab2:checked~.tab-contents .content2,
+input#tab3:checked~.tab-contents .content3
+{
+  display: block;
+}
