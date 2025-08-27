@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动态表单-添加联系人</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>动态联系人表单</h1>
+  <p>支持动态添加/删除联系人信息，实时验证姓名和手机号格式：</p>
+  <form id="contactForm" class="contact-form">
+    <div class="form-group" data-index="0">
+      <div class="form-field">
+        <label for="name-0" class="field-label">姓名</label>
+        <input id="name-0" class="name-input" type="text" placeholder="请输入姓名" required>
+        <p class="error-msg"></p>
+      </div>
+      <div class="form-field">
+        <label for="tel-0" class="field-label">手机号</label>
+        <input id="tel-0" type="tel" class="tel-input" placeholder="请输入手机号" required>
+        <p class="error-msg"></p>
+      </div>
+      <button class="delete-btn hide">删除</button>
+    </div>
+    <div class="buttons">
+      <button type="button" id="addContactBtn" class="add-contact-btn">添加联系人</button>
+      <button id="submitBtn" type="submit" class="submit-btn">提交</button>
+    </div>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
