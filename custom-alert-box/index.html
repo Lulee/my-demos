@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通用警告提示框组件</title>
+  <script type="module" src="./alert-box.js"></script>
+</head>
+
+
+<body>
+  <h1>通用警告提示框组件案例</h1>
+  <h2>默认的使用方法</h2>
+  <alert-box>默认提信息</alert-box>
+  <alert-box type="success">
+    这是成功的信息
+  </alert-box>
+  <alert-box type="error">
+    这是成功的信息
+  </alert-box>
+  <alert-box type="warn">
+    这是提醒的信息
+  </alert-box>
+  <h2>自定义icon</h2>
+  <alert-box type="warn">
+    <span slot="icon">❗️</span>
+    这是提醒的信息
+  </alert-box>
+
+  <h2>自定义样式</h2>
+  <style>
+    .custom-style {
+      --alert-success-border: hsl(240, 60%, 80%);
+      --alert-success-bg: hsla(240, 60%, 80%, 0.3);
+      --alert-text-color: #000;
+    }
+  </style>
+  <div class="custom-style">
+    <alert-box type="success">
+      <span slot="icon">😊</span>
+      这是自定义成功样式
+    </alert-box>
+  </div>
+
+</body>
+
+</html>
